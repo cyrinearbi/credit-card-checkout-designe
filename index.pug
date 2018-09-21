@@ -1,0 +1,54 @@
+<!-- Day Two: Credit Card Checkout Page for Ecommerce Websites -->
+.main-container
+  .creditcard-section.row
+    .creditcard-wrap
+      .creditcard-front
+        .creditcard-icon
+            img(src="http://www.pngmart.com/files/3/Credit-Card-Visa-And-Master-Card-PNG-HD.png", class="card-icon")
+        .creditDeatils-holder
+          .creditNumber 
+            .creditcard-number#b1 XXXX
+            .creditcard-number#b2 XXXX
+            .creditcard-number#b3 XXXX
+            .creditcard-number#b4 XXXX
+          .creditcard-secondLine
+            .creditcard-name#cname Your Name 
+            .creditcard-expiry 
+              span#mon 04
+              | /
+              span#yer 12 
+              
+      .creditcard-back
+        .creditcard-rfid
+        .creditcard-ccv
+          .ccv-number XXXX 
+            span#ccvno XXX
+    .creditcard-form
+      .creditcard-details.row
+        .col-sm-12.text-center
+          .creditcard-number--input
+            input(type="number", name="first", id="block1", class="input-creditnum", placeholder="XXXX")
+            input(type="number", name="second", id="block2", class="input-creditnum",placeholder="XXXX")
+            input(type="number", name="third", id="block3", class="input-creditnum",placeholder="XXXX")
+            input(type="number", name="fourth", id="block4", class="input-creditnum", placeholder="XXXX")
+          .creditcard-details-second
+            .creditcard-name--input
+              input(type="text", name="name", id="name", class="input-creditname", placeholder="Credit Card Holder Name")
+            .creditcard-month--input 
+              select(name="month", id="month", class="input-select")
+                option(value="01") 01
+                option(value="02") 02
+                option(value="03") 03
+                option(value="04") 04
+                option(value="05") 05
+            .creditcard-year--input 
+              select(name="year", id="year", class="input-select")
+                option(value="17") 17
+                option(value="18") 18
+                option(value="19") 19
+                option(value="20") 20
+                option(value="21") 21
+          .creditcard-ccv--input
+            input(type="password", name="ccv", id="ccv", class="input-creditnum", placeholder="XXX")
+        .col-sm-12.text-center
+          input(type="submit", value="PAY",class="input-submit")

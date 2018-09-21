@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Daily UI #002: Credit Card Checkout</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!-- Day Two: Credit Card Checkout Page for Ecommerce Websites -->
+<div class="main-container">
+  <div class="creditcard-section row">
+    <div class="creditcard-wrap">
+      <div class="creditcard-front">
+        <div class="creditcard-icon"><img class="card-icon" src="http://www.pngmart.com/files/3/Credit-Card-Visa-And-Master-Card-PNG-HD.png"/></div>
+        <div class="creditDeatils-holder">
+          <div class="creditNumber"> 
+            <div class="creditcard-number" id="b1">XXXX</div>
+            <div class="creditcard-number" id="b2">XXXX</div>
+            <div class="creditcard-number" id="b3">XXXX</div>
+            <div class="creditcard-number" id="b4">XXXX</div>
+          </div>
+          <div class="creditcard-secondLine">
+            <div class="creditcard-name" id="cname">Your Name </div>
+            <div class="creditcard-expiry"> <span id="mon">04</span>/<span id="yer">12 </span></div>
+          </div>
+        </div>
+      </div>
+      <div class="creditcard-back">
+        <div class="creditcard-rfid"></div>
+        <div class="creditcard-ccv">
+          <div class="ccv-number">XXXX <span id="ccvno">XXX</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="creditcard-form">
+      <div class="creditcard-details row">
+        <div class="col-sm-12 text-center">
+          <div class="creditcard-number--input">
+            <input class="input-creditnum" type="number" name="first" id="block1" placeholder="XXXX"/>
+            <input class="input-creditnum" type="number" name="second" id="block2" placeholder="XXXX"/>
+            <input class="input-creditnum" type="number" name="third" id="block3" placeholder="XXXX"/>
+            <input class="input-creditnum" type="number" name="fourth" id="block4" placeholder="XXXX"/>
+          </div>
+          <div class="creditcard-details-second">
+            <div class="creditcard-name--input">
+              <input class="input-creditname" type="text" name="name" id="name" placeholder="Credit Card Holder Name"/>
+            </div>
+            <div class="creditcard-month--input"> 
+              <select class="input-select" name="month" id="month">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+              </select>
+            </div>
+            <div class="creditcard-year--input"> 
+              <select class="input-select" name="year" id="year">
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+              </select>
+            </div>
+          </div>
+          <div class="creditcard-ccv--input">
+            <input class="input-creditnum" type="password" name="ccv" id="ccv" placeholder="XXX"/>
+          </div>
+        </div>
+        <div class="col-sm-12 text-center">
+          <input class="input-submit" type="submit" value="PAY"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

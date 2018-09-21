@@ -1,0 +1,35 @@
+$(document).ready(function(){
+  $("#block1").keyup(function(){
+    $("#b1").text($(this).val());
+  });
+  $("#block2").keyup(function(){
+    $("#b2").text($(this).val());
+  });
+  $("#block3").keyup(function(){
+    $("#b3").text($(this).val());
+  });
+  $("#block4").keyup(function(){
+    $("#b4").text($(this).val());
+  });
+  $("#name").keyup(function(){
+    $("#cname").text($(this).val());
+  });
+  $("#month").change(function(){
+    $("#mon").text($(this).val());
+  });
+  $("#year").change(function(){
+    $("#yer").text($(this).val());
+  });
+  $("#ccv").blur(function(){
+    $(".creditcard-back").fadeOut("fast");
+    $(".creditcard-front").fadeIn("fast");
+    $("#ccvno").text($(this).val());
+  });
+  $("#ccv").keyup(function(){
+    $("#ccvno").text($(this).val());
+  });
+  $("#ccv").focus(function(){
+    $(".creditcard-back").fadeIn("fast");
+    $(".creditcard-front").fadeOut("fast");
+  });
+});

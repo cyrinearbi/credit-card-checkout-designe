@@ -1,0 +1,179 @@
+// Credit Card Checkout: 
+$blue : #4459F2;
+$green : #33B23F;
+$darkgrey : #25262B;
+$lightgrey : #333742;
+$pink : #FE2C75;
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+.main-container{
+  background: #006CAC;
+  background: -webkit-linear-gradient(left top, #006CAC, #00060E); 
+  background: -o-linear-gradient(bottom right, #006CAC, #00060E);
+  background: -moz-linear-gradient(bottom right,#006CAC, #00060E);
+  background: linear-gradient(to bottom right, #006CAC, #00060E);
+  height: 200vh;  
+  padding: 50px 90px;
+}
+.creditcard-wrap{
+  background: url(http://www.freebiesgallery.com/wp-content/uploads/2014/02/dotted-world-map-vector-2.png) no-repeat;
+  background-color: #23438D;
+  background-size: contain;
+  height: 220px;
+  border-radius: 5px;
+  width: 350px;
+  z-index: 2;
+  margin: 0 auto;
+  box-shadow: 0px 5px 25px 0px #000;
+  position: relative;
+}
+.creditcard-front{
+  position: relative;
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+}
+.creditDeatils-holder{
+  position: absolute;
+  bottom: 25px;
+}
+.creditcard-number{
+  font-family: 'Inconsolata', monospace;
+  font-size: 25px;
+  color: #fff;
+  padding: 0 5px;
+  display: inline-block;
+}
+.creditNumber{
+  text-align: center;
+  width: 100%;
+}
+.creditcard-name{
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
+  color: #fff;
+  display: inline-block;
+}
+.creditcard-expiry{
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
+  color: #fff;
+  margin-left: 50px;
+  display: inline-block;
+  &:after{
+    content: "Expiry";
+    font-size: 14px;    
+    display: block;
+    margin-top: -10px;
+    text-align: center;
+  }
+}
+.creditcard-icon {  
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  text-align: right;
+  padding-left: 15px;
+  
+}
+.card-icon{
+  width: 150px;
+}
+.creditcard-back{
+  display: none;
+}
+.creditcard-rfid{
+  background: #000;
+  height: 45px;
+  margin-top: 25px;
+}
+.creditcard-ccv{
+  margin-top: 15px;
+  background: #fff;
+}
+.ccv-number{
+  text-align: right;
+  padding: 0 25px;
+  border-left: 1px solid #222;
+}
+.creditcard-form{
+  background: #fff;
+  height: 100%;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: -75px;
+  z-index: 1;
+}
+.creditcard-details{
+  padding-top: 100px;
+}
+.creditcard-number--input{
+  width: 100%;
+  padding: 10px 25px;
+}
+.input-creditnum{
+  display: inline-block;
+  width: 75px;
+  border: none;
+  margin: 0 5px;
+  border-bottom: 2px solid #00060E;
+  text-align: center;
+}
+.input-creditname{
+  width: 320px;
+  border: none;
+  margin: 0 5px;
+  border-bottom: 2px solid #00060E;
+  text-align: left;
+}
+.creditcard-name--input, .creditcard-ccv--input{
+  display: inline-block;
+  text-align: left;
+  padding: 10px 25px;
+}
+.creditcard-month--input, .creditcard-year--input  {
+  display: inline-block;
+}
+.creditcard-ccv--input{
+  &:before{
+    content: "CCV:";
+    padding: 0 15px;
+  }
+}
+.creditcard-year--input{
+  &:after{
+    content: "YY";
+    position: absolute;
+    text-align: center;
+    margin-left: -8px;
+  }
+}
+.creditcard-month--input{
+  &:after{
+    content: "MM";
+    position: absolute;
+    margin-left: -8px;
+  }
+}
+.input-select{
+  border: 1px solid #00060E;
+  padding: 3px 5px;
+  border-radius: 3px;
+}
+.input-submit{
+  border: 2px solid #006CAC;
+  background: #006CAC;
+  color: #fff;
+  outline: none;
+  font-weight: 400;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin: 25px;
+  padding: 2px 25px;
+  border-radius: 30px;
+  transition: all 300ms ease-in;
+  &:hover, &:focus{
+    color: #00060E;
+  }
+}
